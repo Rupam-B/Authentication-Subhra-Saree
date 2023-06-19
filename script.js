@@ -24,6 +24,9 @@ Signinbtn.onclick = function(){
         window.location.assign("https://subhra-saree-website.netlify.app/");
 
     }
+    else{
+        alert("Wrong Email Id/Password")
+    }
 
 }
 
