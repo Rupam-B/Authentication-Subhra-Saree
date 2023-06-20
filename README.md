@@ -1,1 +1,1 @@
-welcome-to-subhra-saree-house.netlify.app
+https://welcome-to-subhra-saree-house.netlify.app
