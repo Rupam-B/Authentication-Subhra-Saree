@@ -37,9 +37,9 @@ Signupbtn.onclick = function(){
     Signinbtn.classList.add('disabled')
     Signupbtn.classList.remove('disabled')
 
-    const username=document.getElementById("enter-user").value;
-    const email=document.getElementById("enter-email").value;
-    const password=document.getElementById("enter-password").value;
+    let username=document.getElementById("enter-user").value;
+    let email=document.getElementById("enter-email").value;
+    let password=document.getElementById("enter-password").value;
 
     const user ={
         username: username,
@@ -55,4 +55,20 @@ window.location.reload();
     
 }
 
+
+function togglePassword() {
+    getPassword = document.getElementById('enter-password')
+    getIcon =  document.getElementById('span')
+    
+    if (getPassword.type == "password") {
+      getPassword.type = "text";
+      getIcon.classList.remove("fa-eye")
+      getIcon.classList.add("fa-eye-slash")
+    } else if (getPassword.type == "text") {
+      getPassword.type = "password";
+      getIcon.classList.remove("fa-eye-slash")
+      getIcon.classList.add("fa-eye")
+    }
+    return false;
+  }
 
